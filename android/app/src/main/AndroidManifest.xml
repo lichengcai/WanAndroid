@@ -11,18 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <!--如果需要访问 DevSettingsActivity 界面（即开发者菜单），则还需要在 AndroidManifest.xml 中声明:-->
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
         <activity android:name=".AppStartActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

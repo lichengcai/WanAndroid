@@ -16,17 +16,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:background="@color/colorAccent"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <RadioButton
-
+            android:text="Home"
+            android:background="@color/colorAccent"
             android:id="@+id/radio_home"
             style="@style/RadioButtonStyle" />
 
         <RadioButton
+            android:text="Knowledge"
             android:id="@+id/radio_knowledge"
             style="@style/RadioButtonStyle" />
     </RadioGroup>
